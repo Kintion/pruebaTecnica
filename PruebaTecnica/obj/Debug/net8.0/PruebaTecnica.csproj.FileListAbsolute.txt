@@ -1,0 +1,14 @@
+C:\Users\Kemel\source\repos\PruebaTecnica\PruebaTecnica\bin\Debug\net8.0\PruebaTecnica.exe
+C:\Users\Kemel\source\repos\PruebaTecnica\PruebaTecnica\bin\Debug\net8.0\PruebaTecnica.deps.json
+C:\Users\Kemel\source\repos\PruebaTecnica\PruebaTecnica\bin\Debug\net8.0\PruebaTecnica.runtimeconfig.json
+C:\Users\Kemel\source\repos\PruebaTecnica\PruebaTecnica\bin\Debug\net8.0\PruebaTecnica.dll
+C:\Users\Kemel\source\repos\PruebaTecnica\PruebaTecnica\bin\Debug\net8.0\PruebaTecnica.pdb
+C:\Users\Kemel\source\repos\PruebaTecnica\PruebaTecnica\obj\Debug\net8.0\PruebaTecnica.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kemel\source\repos\PruebaTecnica\PruebaTecnica\obj\Debug\net8.0\PruebaTecnica.AssemblyInfoInputs.cache
+C:\Users\Kemel\source\repos\PruebaTecnica\PruebaTecnica\obj\Debug\net8.0\PruebaTecnica.AssemblyInfo.cs
+C:\Users\Kemel\source\repos\PruebaTecnica\PruebaTecnica\obj\Debug\net8.0\PruebaTecnica.csproj.CoreCompileInputs.cache
+C:\Users\Kemel\source\repos\PruebaTecnica\PruebaTecnica\obj\Debug\net8.0\PruebaTecnica.dll
+C:\Users\Kemel\source\repos\PruebaTecnica\PruebaTecnica\obj\Debug\net8.0\refint\PruebaTecnica.dll
+C:\Users\Kemel\source\repos\PruebaTecnica\PruebaTecnica\obj\Debug\net8.0\PruebaTecnica.pdb
+C:\Users\Kemel\source\repos\PruebaTecnica\PruebaTecnica\obj\Debug\net8.0\PruebaTecnica.genruntimeconfig.cache
+C:\Users\Kemel\source\repos\PruebaTecnica\PruebaTecnica\obj\Debug\net8.0\ref\PruebaTecnica.dll
