@@ -40,9 +40,9 @@ namespace PruebaTecnica
             _words = words.Select(word => word.ToLower()).ToHashSet();
         }
 
-        public List<string> DecodeWithStack(string morseSequence)
+        public HashSet<string> DecodeWithStack(string morseSequence)
         {
-            List<string> results = new List<string>();
+            HashSet<string> results = new HashSet<string>();
             Stack<(string, string, string)> stack = new Stack<(string RemainingMorse, string CurrentWord, string CurrentSentence)>();
 
             stack.Push((morseSequence, "", ""));
@@ -51,7 +51,7 @@ namespace PruebaTecnica
             {
                 var (remainingMorse, currentWord, currentSentence) = stack.Pop();
 
-                if (string.IsNullOrEmpty(remainingMorse) && !string.IsNullOrEmpty(currentSentence))
+                if (string.IsNullOrEmpty(remainingMorse) && !string.IsNullOrEmpty(currentSentence) && string.IsNullOrEmpty(currentWord))
                 {
                     results.Add(currentSentence.Trim());
                     continue;
@@ -81,16 +81,16 @@ namespace PruebaTecnica
             return results;
         }
 
-        public List<string> DecodeUsingRecursive(string morseSequence)
+        public HashSet<string> DecodeUsingRecursive(string morseSequence)
         {
-            List<string> results = new List<string>();
+            HashSet<string> results = new HashSet<string>();
             DecodeRecursive(morseSequence, "", results, "");
             return results;
         }
 
-        private void DecodeRecursive(string morseSequence, string currentWord, List<string> results, string currentSentence)
+        private void DecodeRecursive(string morseSequence, string currentWord, HashSet<string> results, string currentSentence)
         {
-            if (string.IsNullOrEmpty(morseSequence) && !string.IsNullOrEmpty(currentSentence))
+            if (string.IsNullOrEmpty(morseSequence) && !string.IsNullOrEmpty(currentSentence) && string.IsNullOrEmpty(currentWord))
             {
                 results.Add(currentSentence.Trim());
                 return;

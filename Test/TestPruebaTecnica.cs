@@ -21,9 +21,9 @@ namespace Test
 
             MorseDecoder decoder = new MorseDecoder(_dictionary);
 
-            List<string> solucionStack = decoder.DecodeWithStack(morseSequence);
+            HashSet<string> solucionStack = decoder.DecodeWithStack(morseSequence);
 
-            List<string> solucionRecursivity = decoder.DecodeUsingRecursive(morseSequence);
+            HashSet<string> solucionRecursivity = decoder.DecodeUsingRecursive(morseSequence);
 
             Assert.Equal(solucionStack.Count, solucionRecursivity.Count);
         }
@@ -35,8 +35,8 @@ namespace Test
 
             MorseDecoder decoder = new MorseDecoder(_dictionary);
 
-            List<string> solucionStack = decoder.DecodeWithStack(morseSequence);
-            List<string> solucionRecursivity = decoder.DecodeUsingRecursive(morseSequence);
+            HashSet<string> solucionStack = decoder.DecodeWithStack(morseSequence);
+            HashSet<string> solucionRecursivity = decoder.DecodeUsingRecursive(morseSequence);
 
             Assert.Empty(solucionStack);
             Assert.Empty(solucionRecursivity);
@@ -49,8 +49,8 @@ namespace Test
 
             MorseDecoder decoder = new MorseDecoder(_dictionary);
 
-            List<string> solucionStack = decoder.DecodeWithStack(morseSequence);
-            List<string> solucionRecursivity = decoder.DecodeUsingRecursive(morseSequence);
+            HashSet<string> solucionStack = decoder.DecodeWithStack(morseSequence);
+            HashSet<string> solucionRecursivity = decoder.DecodeUsingRecursive(morseSequence);
 
             Assert.Contains("published", solucionStack);
             Assert.Contains("published", solucionRecursivity);

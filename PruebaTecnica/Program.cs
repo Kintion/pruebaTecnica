@@ -12,8 +12,8 @@ namespace PruebaTecnica
             string morseSequence = "--.--.---.......-.---.-.-.-..-.....--..-....-.-----..-";
 
             MorseDecoder decoder = new MorseDecoder(dictionary);
-            List<string> sentences = decoder.DecodeUsingRecursive(morseSequence);
-            List<string> alternativeSolution = decoder.DecodeWithStack(morseSequence);
+            HashSet<string> sentences = decoder.DecodeUsingRecursive(morseSequence);
+            HashSet<string> alternativeSolution = decoder.DecodeWithStack(morseSequence);
 
 
             Console.WriteLine("Possible sentences:");
